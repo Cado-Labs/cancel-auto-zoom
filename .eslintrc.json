@@ -1,0 +1,76 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "umbrellio",
+    "plugin:promise/recommended"
+  ],
+  "globals": {
+    "process": "readonly",
+    "require": "readonly"
+  },
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "jsx": true,
+      "legacyDecorators": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prefer-object-spread",
+    "import",
+    "promise"
+  ],
+  "rules": {
+    "react/jsx-closing-bracket-location": "off",
+    "react/prop-types": "off",
+    "react/jsx-pascal-case": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/sort-comp": ["error", {
+      "order": [
+        "static-variables",
+        "static-methods",
+        "instance-variables",
+        "lifecycle",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "switch-colon-spacing": "off",
+    "no-buffer-constructor": "off",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^_.+", "argsIgnorePattern": "^_.+" }],
+    "new-cap": "off",
+    "prefer-promise-reject-errors": "off",
+    "eqeqeq": ["error", "smart"],
+    "import/order": ["error", {
+      "groups": [["builtin", "external"], "internal", ["parent", "sibling"]],
+      "newlines-between": "always",
+      "pathGroups": [
+        {
+          "pattern": "$*",
+          "group": "internal"
+        },
+        {
+          "pattern": "$*/**",
+          "group": "internal"
+        }
+      ],
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }],
+    "import/no-anonymous-default-export": ["error", { "allowObject": true }],
+    "import/group-exports": "error",
+    "promise/no-nesting": "error",
+    "promise/always-return": "off",
+    "promise/no-return-wrap": "off",
+    "promise/catch-or-return": ["error", { "allowFinally": true }]
+  }
+}

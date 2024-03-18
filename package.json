@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Cancelling auto zoom on mobile devices",
   "main": "cancelAutoZoomInput.js",
+  "prepublishOnly": "yarn build",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Cado-Labs/cancel-auto-zoom/issues"
   },
-  "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom#readme"
+  "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom#readme",
+  "devDependencies": {
+    "eslint-config-umbrellio": "^5.0.1"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0"
+  }
 }

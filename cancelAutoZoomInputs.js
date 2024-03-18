@@ -13,6 +13,15 @@ const blockZoomForMouseDown = ({ target }) => {
   }
 }
 
-export default function cancelAutoZoomInInputs () {
+function initiateCancelAutoZoomInInputs () {
   document.addEventListener("mousedown", blockZoomForMouseDown)
+}
+
+function removeCancelAutoZoomInInputs () {
+  document.removeEventListener("mousedown",blockZoomForMouseDown)
+}
+
+export {
+  initiateCancelAutoZoomInInputs,
+  removeCancelAutoZoomInInputs
 }

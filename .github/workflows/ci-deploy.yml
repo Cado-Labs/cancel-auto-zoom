@@ -5,7 +5,7 @@ on:
     types: [created]
 
 jobs:
-  deploy-sphere:
+  deploy-cancel-auto-zoom:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
