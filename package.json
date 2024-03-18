@@ -1,0 +1,19 @@
+{
+  "name": "@cadolabs/cancel-auto-zoom",
+  "version": "1.0.0",
+  "description": "Cancelling auto zoom on mobile devices",
+  "main": "cancelAutoZoomInput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Cado-Labs/cancel-auto-zoom.git"
+  },
+  "author": "Ginger-nomad <kirill.primachenko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cado-Labs/cancel-auto-zoom/issues"
+  },
+  "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom#readme"
+}

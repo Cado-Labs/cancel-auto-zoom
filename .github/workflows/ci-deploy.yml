@@ -1,0 +1,17 @@
+name: deploy
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy-sphere:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Publish package to NPM
+        run: npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
