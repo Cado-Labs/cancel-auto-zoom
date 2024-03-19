@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   
 jobs:
-  run linter:
+  run-linter:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
     
-    - run: yarn
+      - run: yarn
 
-    - run: yarn lint
+      - run: yarn lint
