@@ -5,7 +5,10 @@
   "main": "cancelAutoZoomInput.js",
   "prepublishOnly": "yarn build",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "lint": "yarn run lint:js",
+    "lint:fix": "yarn run lint:js --fix",
+    "lint:js": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,18 @@
   },
   "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom#readme",
   "devDependencies": {
-    "eslint-config-umbrellio": "^5.0.1"
+    "@babel/eslint-parser": "^7.24.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^8.57.0",
+    "eslint-config-umbrellio": "^5.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "rollup": "3.0.0"
   },
   "dependencies": {
-    "eslint": "^8.57.0"
+    "@babel/core": "^7.24.1"
   }
 }

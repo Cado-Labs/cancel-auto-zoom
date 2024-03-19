@@ -18,10 +18,10 @@ function initiateCancelAutoZoomInInputs () {
 }
 
 function removeCancelAutoZoomInInputs () {
-  document.removeEventListener("mousedown",blockZoomForMouseDown)
+  document.removeEventListener("mousedown", blockZoomForMouseDown)
 }
 
 export {
   initiateCancelAutoZoomInInputs,
-  removeCancelAutoZoomInInputs
+  removeCancelAutoZoomInInputs,
 }
