@@ -1,13 +1,9 @@
-name: deploy
+name: linter
 
-on:
-  release:
-    types: [created]
-  pull_request:
-    branches: [ master ]
-
+on: [push, commit]
+  
 jobs:
-  deploy-cancel-auto-zoom:
+  run linter:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,10 +18,3 @@ jobs:
     - run: yarn
 
     - run: yarn lint
-
-    - run: yarn build
-
-    - name: Publish package to NPM
-      run: npm publish --access=public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -39,7 +39,8 @@ const config = [
         format: "iife",
         name: "T",
       },
-    } }),
+    }
+  }),
 ]
 
 export default config
