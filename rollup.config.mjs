@@ -39,7 +39,7 @@ const config = [
         format: "iife",
         name: "T",
       },
-    }
+    },
   }),
 ]
 
