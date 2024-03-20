@@ -8,6 +8,28 @@ Cancelling auto zoom on mobile browser inputs , ios specifically
 
 ## Usage
 
-import cancelAutoZoomInInputs from "@cadolabs/cancel-auto-zoom"
+import { initiateCancelAutoZoomInInputs, removeCancelAutoZoomInInputs } from "@cadolabs/cancel-auto-zoom"
 
-invoke this function inside ComponentDidMount in index.js file of a project 
+invoke initiateCancelAutoZoomInInputs function inside ComponentDidMount and removeCancelAutoZoomInInputs inside ComponentWillUnmount in index.js file of a project 
+
+## Contributing
+
+Fork it ( https://github.com/Cado-Labs/cancel-auto-zoom )
+Create your feature branch (git checkout -b feature/my-new-feature)
+Commit your changes (git commit -am '[feature_context] Add some feature')
+Push to the branch (git push origin feature/my-new-feature)
+Create a new Pull Request
+
+## License
+
+Released under MIT License.
+
+## Supporting
+
+<a href="https://github.com/Cado-Labs">
+  <img src="https://github.com/Cado-Labs/cado-labs-resources/raw/main/cado_labs_supporting_rounded.svg" alt="Supported by Cado Labs" style="max-width: 100%;">
+</a>
+
+## Authors
+
+https://github.com/Ginger-nomad
