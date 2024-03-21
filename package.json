@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Cancelling auto zoom on mobile devices",
   "main": "cancelAutoZoomInput.js",
-  "prepublishOnly": "yarn build",
   "scripts": {
     "build": "rollup -c",
     "lint": "yarn run lint:js",
     "lint:fix": "yarn run lint:js --fix",
-    "lint:js": "eslint ."
+    "lint:js": "eslint .",
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
