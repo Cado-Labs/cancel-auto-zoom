@@ -10,9 +10,11 @@ export default function cancelAutoZoom () {
     if (content.includes(noScalableString)) return
 
     meta.content = `${content},${noScalableString}`
+    window.top.postMessage({ event: "zoom", payload: meta.content }, "*")
 
     requestAnimationFrame(() => {
       meta.content = content
+      window.top.postMessage({ event: "zoom", payload: content }, "*")
     })
   } catch (error) {}
 }
