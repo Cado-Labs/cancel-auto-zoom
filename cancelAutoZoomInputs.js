@@ -1,7 +1,8 @@
 import cancelAutoZoom from "./cancelAutoZoom"
 import { tagNames } from "./constants"
 import deepListenerWrapper from "./deepListenerWrapper"
-import { setInitalMetaContent, addWindowListener } from "./helpers"
+import { setInitalMetaContent } from "./setInitalMetaContent"
+import { setupZoomListener } from "./setupZoomListener"
 
 const isInteractive = element =>
   tagNames.includes(element.tagName.toLowerCase())
@@ -26,5 +27,5 @@ export {
   initiateCancelAutoZoomInInputs,
   removeCancelAutoZoomInInputs,
   setInitalMetaContent,
-  addWindowListener,
+  setupZoomListener,
 }
