@@ -1,5 +1,5 @@
 import getViewport from "./getViewport"
-import { postZoom } from "./postZoom"
+import { setViewport } from "./setViewport"
 
 const noScalableString = "user-scalable=no"
 
@@ -11,11 +11,11 @@ export default function cancelAutoZoom () {
     if (content.includes(noScalableString)) return
 
     meta.content = `${content},${noScalableString}`
-    postZoom(meta.content)
+    setViewport(meta.content)
 
     requestAnimationFrame(() => {
       meta.content = content
-      postZoom(content)
+      setViewport(content)
     })
   } catch (error) {}
 }
