@@ -1,7 +1,7 @@
 import cancelAutoZoom from "./cancelAutoZoom"
 import { tagNames } from "./constants"
 import deepListenerWrapper from "./deepListenerWrapper"
-import { setInitalMetaContent } from "./setInitalMetaContent"
+import { postZoom } from "./postZoom"
 import { setupZoomListener } from "./setupZoomListener"
 
 const isInteractive = element =>
@@ -26,6 +26,6 @@ function removeCancelAutoZoomInInputs () {
 export {
   initiateCancelAutoZoomInInputs,
   removeCancelAutoZoomInInputs,
-  setInitalMetaContent,
+  postZoom,
   setupZoomListener,
 }
