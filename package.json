@@ -1,8 +1,8 @@
 {
   "name": "@cadolabs/cancel-auto-zoom",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Cancelling auto zoom on mobile devices",
-  "main": "cancelAutoZoomInput.js",
+  "main": "dist/cancel-auto-zoom.cjs.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "yarn run lint:js",
@@ -10,16 +10,13 @@
     "lint:js": "eslint .",
     "prepublishOnly": "yarn build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Cado-Labs/cancel-auto-zoom.git"
-  },
+  "repository": "https://github.com/Cado-Labs/cancel-auto-zoom",
+  "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom",
   "author": "Ginger-nomad <kirill.primachenko@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Cado-Labs/cancel-auto-zoom/issues"
   },
-  "homepage": "https://github.com/Cado-Labs/cancel-auto-zoom#readme",
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
     "@rollup/plugin-babel": "^6.0.4",
