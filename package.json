@@ -1,6 +1,6 @@
 {
   "name": "@cadolabs/cancel-auto-zoom",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Cancelling auto zoom on mobile devices",
   "main": "dist/cancel-auto-zoom.cjs.js",
   "scripts": {
