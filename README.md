@@ -7,9 +7,9 @@ yarn add @cadolabs/cancel-auto-zoom
 Cancelling auto zoom on mobile browser inputs , ios specifically 
 
 ## Usage
-import { initiateCancelAutoZoomInInputs, removeCancelAutoZoomInInputs, setViewport, addWindowListener} from "@cadolabs/cancel-auto-zoom"
+import { initiateCancelAutoZoomInInputs, removeCancelAutoZoomInInputs, postZoom, addWindowListener} from "@cadolabs/cancel-auto-zoom"
 
-invoke initiateCancelAutoZoomInInputs, setViewport, addWindowListener functions inside ComponentDidMount and removeCancelAutoZoomInInputs inside ComponentWillUnmount in index.js file of a project 
+invoke initiateCancelAutoZoomInInputs, postZoom, addWindowListener functions inside ComponentDidMount and removeCancelAutoZoomInInputs inside ComponentWillUnmount in index.js file of a project 
 
 ## Contributing
 
