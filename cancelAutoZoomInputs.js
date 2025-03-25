@@ -1,8 +1,8 @@
 import cancelAutoZoom from "./cancelAutoZoom"
 import { tagNames } from "./constants"
 import deepListenerWrapper from "./deepListenerWrapper"
-import { setupZoomListener } from "./setupZoomListener"
 import { postZoom } from "./postZoom"
+import { setupZoomListener } from "./setupZoomListener"
 
 const isInteractive = element =>
   tagNames.includes(element.tagName.toLowerCase())
