@@ -2,7 +2,7 @@ import cancelAutoZoom from "./cancelAutoZoom"
 import { tagNames } from "./constants"
 import deepListenerWrapper from "./deepListenerWrapper"
 import { setupZoomListener } from "./setupZoomListener"
-import { setViewport } from "./setViewport"
+import { postZoom } from "./postZoom"
 
 const isInteractive = element =>
   tagNames.includes(element.tagName.toLowerCase())
@@ -26,6 +26,6 @@ function removeCancelAutoZoomInInputs () {
 export {
   initiateCancelAutoZoomInInputs,
   removeCancelAutoZoomInInputs,
-  setViewport,
+  postZoom,
   setupZoomListener,
 }
